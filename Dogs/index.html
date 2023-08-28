@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Dogs</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <h1>Busk Dog$</h1>
+    <form id="dog-form">
+        <label id="labelName">Nome do Cachorro:</label>
+
+        <!--Input Nome-->
+        <input type="text" placeholder="Nome do seu Dog$" id="dogname" name="name">
+        <br>
+        <br>
+        <label id="labelBreed" for="breed-select">Raça:</label>
+        
+
+        <!--Select Raça-->
+        <select id="selectbreed" name="breed">
+            <option value="" disabled selected>Raça do seu Dog$</option>
+            <option value="pomeranian" name="Lulu da Pomerania"> Lulu da Pomerania</option>
+            <option value="bernese" name="Bernese Mountain Dog"> Bernese Mountain Dog</option>
+            <option value="dachshund" name="Dachshund">Dachshund - "Salsicha" </option>
+            <option value="husky" name="Husky">Husky Siberiano</option>
+            <option value="malamute" name="Malamute">Malamute do Alaska</option>
+        </select>
+        <br>
+
+        <!--Select Cor-->
+        <br>
+        <label for="font-color">Cor da Fonte:</label>
+   
+        <select id="font-color-select" name="fontColor">
+            <option value="" disabled selected>Selecione a cor da Fonte</option>
+            <option value="black">Preto</option>
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="purple">Roxo</option>
+        </select>
+        <br>
+        
+        <!--Select Fonte-->
+        <br>
+        <label for="font-select">Fonte: </label>
+        
+        <select id="font-select" name="font">
+            <option value="" disabled selected>Selecione o estilo de Fonte</option>
+            <option value="Roboto" , sans-serif;>Roboto</option>
+            <option value="Noto Sans JP" , sans-serif;>Noto</option>
+            <option value="Tulpen One', cursive">Tuplen One</option>
+            <option value="Black Ops One', cursive"> Black OPS</option>
+            <option value="Wavefont', cursive">Wavefont</option>
+        </select>
+        <br>
+        <br>
+        <img id="dogImg" src="" alt="Imagem do Cachorro">
+        <div id="txt-over-image"></div>
+
+        <button type="button" id="btnsave">Salvar</button>
+    </form>
+
+    <div id="success-msg" style="display: none;">Informações salvas com sucesso!</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
