@@ -1,5 +1,7 @@
 <?php
 header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST");
 
 $name = $_POST['name'];
 $selectedBreedName = $_POST['breed'];
